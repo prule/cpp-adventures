@@ -5,11 +5,11 @@ class Sample {
     int x;
 
 public:
-    Sample(int x) {
+    explicit Sample(int x) {
         Sample::x = x;
     }
 
-    int getX() {
+    [[nodiscard]] int getX() const {
         return x;
     }
 
